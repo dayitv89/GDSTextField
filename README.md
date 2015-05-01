@@ -2,6 +2,7 @@
 GDSTextField for multiple text field with single characters input for each text field with equal width and height.
 
 ![alt tag] (https://raw.githubusercontent.com/dayitv89/GDSTextField/master/projectImage.png)
+
 Just make a UIView in storyboard and connect to GDSTextField object, and add this line into code
 ```
 [txtField1 setFields:5
