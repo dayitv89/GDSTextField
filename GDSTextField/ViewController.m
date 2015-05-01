@@ -46,7 +46,7 @@
 }
 
 - (IBAction)btnValue:(id)sender {
-    NSLog(@"value of textfield1 %@, textField2 %@",txtField1.text, txtField2.text);
+    NSLog(@"GDSTextField values of textfield1 %@, textField2 %@",txtField1.text, txtField2.text);
 }
 
 
