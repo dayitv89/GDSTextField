@@ -17,6 +17,8 @@
 - (void)setFields:(NSInteger)noOfFields1
   backgroundColor:(UIColor*)bgColor1
         tintColor:(UIColor*)tintColor1
+        textColor:(UIColor*)textColor1
+textSelectedColor:(UIColor*)textSelectedColor1
 fieldRightPadding:(CGFloat)rPadding1
      keyboardType:(UIKeyboardType)keyboardType1
              font:(UIFont*)font1
@@ -25,6 +27,8 @@ fieldRightPadding:(CGFloat)rPadding1
 - (void)setFields:(NSInteger)noOfFields1
   backgroundImage:(UIImage*)bgImage1
         tintImage:(UIImage*)tintImage1
+        textColor:(UIColor*)textColor1
+textSelectedColor:(UIColor*)textSelectedColor1
 fieldRightPadding:(CGFloat)rPadding1
      keyboardType:(UIKeyboardType)keyboardType1
              font:(UIFont*)font1

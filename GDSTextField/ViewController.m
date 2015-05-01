@@ -23,7 +23,9 @@
     [txtField1 setFields:5
      backgroundColor:[UIColor whiteColor]
               tintColor:[UIColor orangeColor]
-      fieldRightPadding:5.f
+               textColor:[UIColor blackColor]
+       textSelectedColor:[UIColor redColor]
+      fieldRightPadding:15.f
            keyboardType:UIKeyboardTypeNumberPad
                    font:[UIFont systemFontOfSize:30.f]
             andDelegate:self];
@@ -31,6 +33,8 @@
     [txtField2 setFields:6
          backgroundImage:[UIImage imageNamed:@"circle.png"]
                tintImage:[UIImage imageNamed:@"circle1.jpeg"]
+               textColor:[UIColor blackColor]
+       textSelectedColor:[UIColor redColor]
        fieldRightPadding:5.f
             keyboardType:UIKeyboardTypeDefault
                     font:[UIFont systemFontOfSize:30.f]
