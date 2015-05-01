@@ -41,6 +41,8 @@
     UIColor *bgColor, *tintColor;
     UIImage *bgImage, *tintImage;
     
+    UIColor *textColor, *textSelectedColor;
+    
     CGRect oldFrame;
 }
 @end
@@ -51,6 +53,8 @@
 - (void)setFields:(NSInteger)noOfFields1
   backgroundColor:(UIColor*)bgColor1
         tintColor:(UIColor*)tintColor1
+        textColor:(UIColor*)textColor1
+textSelectedColor:(UIColor*)textSelectedColor1
 fieldRightPadding:(CGFloat)rPadding1
      keyboardType:(UIKeyboardType)keyboardType1
              font:(UIFont*)font1
@@ -60,6 +64,8 @@ fieldRightPadding:(CGFloat)rPadding1
     noOfFields = noOfFields1;
     bgColor = bgColor1;
     tintColor = tintColor1;
+    textColor = textColor1;
+    textSelectedColor = textSelectedColor1;
     rPadding = rPadding1;
     keyboardType = keyboardType1;
     font = font1;
@@ -71,6 +77,8 @@ fieldRightPadding:(CGFloat)rPadding1
 - (void)setFields:(NSInteger)noOfFields1
   backgroundImage:(UIImage*)bgImage1
         tintImage:(UIImage*)tintImage1
+        textColor:(UIColor*)textColor1
+textSelectedColor:(UIColor*)textSelectedColor1
 fieldRightPadding:(CGFloat)rPadding1
      keyboardType:(UIKeyboardType)keyboardType1
              font:(UIFont*)font1
@@ -80,6 +88,8 @@ fieldRightPadding:(CGFloat)rPadding1
     noOfFields = noOfFields1;
     bgImage = bgImage1;
     tintImage = tintImage1;
+    textColor = textColor1;
+    textSelectedColor = textSelectedColor1;
     rPadding = rPadding1;
     keyboardType = keyboardType1;
     font = font1;
@@ -118,6 +128,7 @@ fieldRightPadding:(CGFloat)rPadding1
             [txtField.layer setBorderColor:[UIColor lightGrayColor].CGColor];
             [txtField.layer setBorderWidth:.5f];
         }
+        [txtField setTextColor:textColor];
         [txtField setTag:i+1];
         [txtField setKeyboardType:keyboardType];
         [txtField setTextAlignment:NSTextAlignmentCenter];
@@ -182,7 +193,7 @@ fieldRightPadding:(CGFloat)rPadding1
     } else {
         [textField setBackgroundColor:tintColor];
     }
-    
+    [textField setTextColor:textSelectedColor];
     [self setViewForKeyboard];
     return YES;
 }
@@ -193,6 +204,7 @@ fieldRightPadding:(CGFloat)rPadding1
     } else {
         [textField setBackgroundColor:bgColor];
     }
+    [textField setTextColor:textColor];
     return YES;
 }
 
