@@ -178,7 +178,8 @@ fieldRightPadding:(CGFloat)rPadding1
     CGFloat availableHeight = applicationFrame.size.height - areaCoverByKeyBoard;
     CGFloat y;
     if (availableHeight < viewCenterY) {
-        y =  viewCenterY - availableHeight / 2.0;
+        // y =  viewCenterY - availableHeight / 2.0;
+        y = availableHeight - oldFrame.size.height - 50;
     } else {
         y = oldFrame.origin.y;
     }
