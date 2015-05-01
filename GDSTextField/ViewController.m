@@ -19,16 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     [txtField1 setFields:5
-     backgroundColor:[UIColor whiteColor]
-              tintColor:[UIColor orangeColor]
+         backgroundColor:[UIColor whiteColor]
+               tintColor:[UIColor orangeColor]
                textColor:[UIColor blackColor]
        textSelectedColor:[UIColor redColor]
-      fieldRightPadding:15.f
-           keyboardType:UIKeyboardTypeNumberPad
-                   font:[UIFont systemFontOfSize:30.f]
-            andDelegate:self];
+       fieldRightPadding:15.f
+            keyboardType:UIKeyboardTypeNumberPad
+                    font:[UIFont systemFontOfSize:30.f]
+             andDelegate:self];
     
     [txtField2 setFields:6
          backgroundImage:[UIImage imageNamed:@"circle.png"]
