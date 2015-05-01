@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4D26CE0F-704A-4DF1-9C8C-A4CBF14A55F5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>GDSTextField</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7603CA4FFD4F572ECC97154DD2D887D4A907C4B8</key>
 		<string>github.com:gauravds/GDSTextField.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GDSTextField.xcodeproj</string>
+	<string>GDSTextField.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7603CA4FFD4F572ECC97154DD2D887D4A907C4B8</key>
