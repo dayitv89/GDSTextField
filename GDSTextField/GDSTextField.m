@@ -17,9 +17,12 @@
 @end
 
 @implementation GDSCustomField
+//-- Either cursor hide by below method, or change tint color to clear of textfield.
 - (CGRect)caretRectForPosition:(UITextPosition *)position {
     return CGRectZero;
 }
+
+//-- backspace manage
 - (void)deleteBackward {
     if (self.delegate &&
         [self.delegate conformsToProtocol:@protocol(MyGDSCustomFieldDelegate)] &&
@@ -29,6 +32,7 @@
     [super deleteBackward];
 }
 
+//--deleteBackward is not working in iOS 8.0.0-8.2.x :: solved this problem by override keyboardInputShouldDelete:
 - (BOOL)keyboardInputShouldDelete:(UITextField *)textField {
     BOOL shouldDelete = YES;
     if ([UITextField instancesRespondToSelector:_cmd]) {
@@ -47,6 +51,7 @@
     return shouldDelete;
 }
 
+//-- remove paste option in textfield
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
     if (action == @selector(paste:)) {
         return NO;
@@ -54,6 +59,11 @@
     return [super canPerformAction:action withSender:sender];
 }
 @end
+
+
+
+
+
 
 @interface GDSTextField()<MyGDSCustomFieldDelegate>{
     NSInteger noOfFields;
