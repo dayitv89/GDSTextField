@@ -44,10 +44,15 @@
     if (![textField.text length] && isIos8 && isLessThanIos8_3) {
         [self deleteBackward];
     }
-
     return shouldDelete;
 }
 
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+    if (action == @selector(paste:)) {
+        return NO;
+    }
+    return [super canPerformAction:action withSender:sender];
+}
 @end
 
 @interface GDSTextField()<MyGDSCustomFieldDelegate>{
