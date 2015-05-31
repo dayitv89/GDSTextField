@@ -47,7 +47,12 @@
 
     return shouldDelete;
 }
-
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+    if (action == @selector(paste:)) {
+        return NO;
+    }
+    return [super canPerformAction:action withSender:sender];
+}
 @end
 
 @interface GDSTextField()<MyGDSCustomFieldDelegate>{

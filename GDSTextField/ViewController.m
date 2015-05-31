@@ -46,7 +46,12 @@
 }
 
 - (IBAction)btnValue:(id)sender {
-    NSLog(@"GDSTextField values of textfield1 %@, textField2 %@",txtField1.text, txtField2.text);
+    NSString *msg = [NSString stringWithFormat:@"value of textfield1 %@, textField2 %@",txtField1.text, txtField2.text];
+    [[[UIAlertView alloc] initWithTitle:@"GDSTextField"
+                                message:msg
+                               delegate:nil
+                      cancelButtonTitle:@"OK"
+                      otherButtonTitles:nil] show];
 }
 
 
