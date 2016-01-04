@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+- (int)addTwoNumbersA:(int)a intB:(int)b;
 
 @end
 

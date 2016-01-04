@@ -49,6 +49,9 @@
     NSLog(@"GDSTextField values of textfield1 %@, textField2 %@",txtField1.text, txtField2.text);
 }
 
+- (int)addTwoNumbersA:(int)a intB:(int)b {
+    return a+b;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

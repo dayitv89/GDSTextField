@@ -1,0 +1,10 @@
+## Customize the test machine
+machine:
+  xcode:
+    version: "7.1"
+
+  # Add some environment variables
+  environment:
+    LANG: en_US.UTF-8
+    XCODE_PROJECT: GDSTextField.xcodeproj
+    XCODE_SCHEME: GDSTextFieldTests
