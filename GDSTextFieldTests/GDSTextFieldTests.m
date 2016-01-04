@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface GDSTextFieldTests : XCTestCase
-
+@property (nonatomic) ViewController *viewC;
 @end
 
 @implementation GDSTextFieldTests
@@ -25,16 +26,13 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testAddingSuccess {
+    XCTAssertEqual(15, [self.viewC addTwoNumbersA:5 intB:10]);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testAddingFail {
+    XCTAssertEqual(16, [self.viewC addTwoNumbersA:5 intB:10]);
 }
+
 
 @end
